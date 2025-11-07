@@ -555,8 +555,8 @@
 
         .step.active .step-circle,
         .step:hover .step-circle {
-            border-color:#4361ee;
-            background:#4361ee;
+            border-color:#f92d37;
+            background:#FF5A5F;
             color:#fff;
         }
 
@@ -566,7 +566,7 @@
             color:#555;
             transition:color .3s;
         }
-        .step.active .step-title { color:#4361ee; }
+        .step.active .step-title { color:#fc636b; }
 
         /* ---------- Stepper CONTENT PANEL ---------- */
         .content-panel {
@@ -583,7 +583,7 @@
             font-size:22px;
             font-weight:600;
             margin-bottom:12px;
-            color:#4361ee;
+            color:#FF5A5F;
         }
         .content-desc { font-size:16px; color:#555; }
 
