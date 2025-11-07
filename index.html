@@ -1,88 +1,258 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>UX Designer Portfolio- Murukan Gopinathan</title>
-    <link rel="stylesheet" href="css/styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Murukan Gopinathan UX Designer</title>
+  <link href="https://fonts.googleapis.com/css?family=Inter:700,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-
-    <!--Google Fonts-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Varela&display=swap" rel="stylesheet">
-    <style>
+  <style>
         
-    </style>
+  </style>
 </head>
 <body>
-    <!-- Navigation -->
-    <nav>
-        <div class="nav-container">
-            <a href="#home" class="logo">Portfolio 2025 - Murukan Gopinathan</a>
-            <ul class="nav-links">
-                <li><a href="#home" class="active">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-            <button class="mobile-menu-btn">
-                <i class="fas fa-bars"></i>
-            </button>
-        </div>
-    </nav>
+  <!-- Loader Overlay -->
+  <div id="loader-overlay">
+    <div class="spinner"></div>
+  </div>
 
-    <!-- Home Section -->
-    <section id="home">
-        <div class="container">
-            <div class="hero-content">
-                <div class="hero-text">
-                    <p class="clr-white">Welcome to My Design Journey</p> <p class="tagline"></p>
-                    <h1 class="clr-lightBl">Creating intuitive digital experiences that users love</h1>
-                    <p class="clr-Gry-white varela-regular "> I design human-centered solutions that bridge the gap between user needs and business goals through research, prototyping, and iterative testing.</p>
-                    <a href="#projects" class="btn btn-action">View My Work</a>
-                    <a href="files/pf25-project-1.html#UXLanding" class="btn btn-secondary">My Approach to UX Design</a>
+  <!-- HEADER BAR -->
+  <header id="site-header">
+    <div class="brand">Murukan Gopinathan <span class="accent">UX Designer</span></div>
+    <nav class="header-nav">
+      <a href="#home"><span class= "icon-tooltip-container"><img src="images/home.svg" alt="icon" width="18px"><span class="tooltip-text">Home</span></span></a>
+      <a href="#process"><span class= "icon-tooltip-container"><img src="images/process-multi.svg" alt="icon" width="18px"><span class="tooltip-text">Design Process</span></span></a>
+      <a href="#projects"><span class= " icon-tooltip-container"><img src="images/monitor-line.svg" alt="icon" width="18px"><span class="tooltip-text">Projects</span></span></a>
+      <a href="#about"><span class= "icon-tooltip-container"><img src="images/me-user.svg" alt="icon" width="18px"><span class="tooltip-text">About me</span></span></a>
+      <a href="#contact"><span class= " icon-tooltip-container"><img src="images/contactPhone.svg" alt="icon" width="18px"><span class="tooltip-text">Contact</span></span></a>
+    </nav>
+  </header>
+
+  <!-- Hamburger Icon Floating Top-Right -->
+  <button class="hamburger" id="open-menu" aria-label="Open menu" tabindex="0">
+    <div class="hamburger-bg"></div>
+    <div class="hamburger-lines">
+      <div class="hamburger-line"></div>
+      <div class="hamburger-line"></div>
+    </div>
+  </button>
+
+  <!-- Full-page dropdown -->
+  <div id="menu-overlay">
+    <nav>
+        <a href="#home" class="menu-link"><span class= " gap15"><img src="images/home.svg" alt="icon" width="30px"></span>Home</a>
+        <a href="#process" class="menu-link"><span class= " gap15"><img src="images/process-multi.svg" alt="icon" width="30px"></span>Design Process</a>
+        <a href="#projects" class="menu-link"><span class= " gap15"><img src="images/monitor-line.svg" alt="icon" width="30px"></span>Projects</a>
+        <a href="#about" class="menu-link"><span class= " gap15"><img src="images/me-user.svg" alt="icon" width="30px"></span>About Me</a>
+        <a href="#contact" class="menu-link"><span class= " gap15"><img src="images/contactPhone.svg" alt="icon" width="30px"></span>Contact</a>
+  </div>
+
+  <main class="hero" >
+    <!--code for home animation-->
+      <div class="container ">
+       <div class="column column-left">
+            <div class="column-content">
+                <!-- Duplicate content for seamless loop -->
+                <div class="image-card">
+                    <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" alt="Mountain">
+                    
                 </div>
-                <div class="hero-image">
-                    <img src="images/uxlogo.svg" alt="Murukan Gopinathan, Senior UX Designer & Researcher">
+                <div class="image-card">
+                    <img src="https://images.unsplash.com/photo-1439066615861-d1af74d74000?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" alt="Forest">
+                    
+                </div>
+                <div class="image-card">
+                    <img src="https://images.unsplash.com/photo-1505142468610-359e7d316be0?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" alt="Lake">
+                    
+                </div>
+                <div class="image-card">
+                    <img src="https://images.unsplash.com/photo-1464822759849-deb9df5c6f69?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" alt="Aurora">
+                    
+                </div>
+                <div class="image-card">
+                    <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" alt="Mountain">
+                    
+                </div>
+                <div class="image-card">
+                    <img src="https://images.unsplash.com/photo-1439066615861-d1af74d74000?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" alt="Forest">
+                    
+                </div>
+                <div class="image-card">
+                    <img src="https://images.unsplash.com/photo-1505142468610-359e7d316be0?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" alt="Lake">
+                    
+                </div>
+                <div class="image-card">
+                    <img src="https://images.unsplash.com/photo-1464822759849-deb9df5c6f69?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" alt="Aurora">
+                    
                 </div>
             </div>
         </div>
-    </section>
 
-    <!-- About Section -->
-    <section id="about" class="borderBtm">
-        <div class="container">
-            <h2>About Me</h2>
-            <div class="about-content">
-                <div class="about-text">
-                    <p>Hello! I'm Murukan, a passionate UX designer with over 20 years of experience creating digital products that are both beautiful and functional. My background in user research and design allows me to approach problems from a unique perspective.</p>
-                    <p>I believe in designing with empathy, understanding not just what users do, but why they do it. This human-centered approach has helped me create solutions that significantly improve user satisfaction and business metrics.</p>
-                    <p>My career goal is to lead product design at a company that values innovation, user research, and creating meaningful experiences that make a positive impact on people's lives.</p>
+        <div class="column column-right">
+            <div class="column-content">
+                <!-- Duplicate content for seamless loop -->
+                <div class="image-card">
+                    <img src="https://images.unsplash.com/photo-1518837695005-2083093ee35b?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" alt="Music">
+                    
                 </div>
-                <div class="skills-container">
-                    <div class="skill-category">
-                        <h3>Design Skills</h3>
-                        <ul class="skill-list">
-                            <li>User Interface Design</li>
-                            <li>Interaction Design</li>
-                            <li>Wireframing & Prototyping</li>
-                            <li>Design Systems</li>
-                            <li>Visual Design</li>
-                        </ul>
-                    </div>
-                    <div class="skill-category">
-                        <h3>Research Skills</h3>
-                        <ul class="skill-list">
-                            <li>User Interviews</li>
-                            <li>Usability Testing</li>
-                            <li>Persona Development</li>
-                            <li>Journey Mapping</li>
-                            <li>Analytics & Data Analysis</li>
-                        </ul>
-                    </div>
-                    <div class="skill-category">
+                <div class="image-card">
+                    <img src="https://images.unsplash.com/photo-1511376777868-611b54f68947?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" alt="Code">
+                    
+                </div>
+                <div class="image-card">
+                    <img src="https://images.unsplash.com/photo-1518709268805-4e9042af2176?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" alt="Art">
+                    
+                </div>
+                <div class="image-card">
+                    <img src="https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" alt="Technology">
+                    
+                </div>
+                <div class="image-card">
+                    <img src="https://images.unsplash.com/photo-1518837695005-2083093ee35b?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" alt="Music">
+                    
+                </div>
+                <div class="image-card">
+                    <img src="https://images.unsplash.com/photo-1511376777868-611b54f68947?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" alt="Code">
+                    
+                </div>
+                <div class="image-card">
+                    <img src="https://images.unsplash.com/photo-1518709268805-4e9042af2176?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" alt="Art">
+                    
+                </div>
+                <div class="image-card">
+                    <img src="https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" alt="Technology">
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--end home animation-->
+    
+    <section id="home" class="titleHome homeSection ">
+      <h1 class="headline">Award Winning </br>User Experience</h1>
+      <div class="subtitle">
+        I design interfaces that think smart and feel human — blending creativity, psychology, and technology.
+      </div>
+      <div class="buttons">
+       <a href="#process"> <button class="btn-main">Design Process</button></a>
+        <button class="btn-outline">Contact Me</button>
+      </div>
+    </section>
+  </main>
+  
+    <section class="section " id="process">
+      <div class="section-title">
+        <h2 class="headline">How Helping Business.</h2>
+        <div class="subtitle">
+          A UX Designer plays a crucial role in aligning product experiences with business goals, helping organizations reduce risk, increase customer satisfaction, and boost ROI.
+        </div>
+      </div>
+    <!-- STEPPER -->
+    <div class="stepperContainer">
+      <div class="stepper" id="stepper">
+              <div class="step active" data-index="0">
+                  <div class="step-circle"></div>
+                  <div class="step-title">UX Audit</div>
+              </div>
+              <div class="step" data-index="1">
+                  <div class="step-circle"></div>
+                  <div class="step-title">Strategic Proposal</div>
+              </div>
+              <div class="step" data-index="2">
+                  <div class="step-circle"></div>
+                  <div class="step-title">Deep Analysis</div>
+              </div>
+              <div class="step" data-index="3">
+                  <div class="step-circle"></div>
+                  <div class="step-title">Information Architecture & Usability Enhancement</div>
+              </div>
+              <div class="step" data-index="4">
+                  <div class="step-circle"></div>
+                  <div class="step-title">Wireframes, Prototypes, & Design System</div>
+              </div>
+              <div class="step" data-index="5">
+                  <div class="step-circle"></div>
+                  <div class="step-title">Development Handover & Support</div>
+              </div>
+              <div class="step" data-index="6">
+                  <div class="step-circle"></div>
+                  <div class="step-title">Usability Testing & Iterations</div>
+              </div>
+        </div>
+        <!-- CONTENT PANEL -->
+        <div id="contentPanel" class="content-panel active">
+            <div class="content-title">UX Audit</div>
+            <div class="content-desc">Understanding the Current State</div>
+        </div>
+      </div>
+    </section>
+    <section class="section " id="projects">
+      <div class="section-title">
+        <h2 class="headline">Featured Projects</h2>
+        <div class="subtitle">
+          I design interfaces that think smart and feel human — blending creativity, psychology, and technology.</br>Here are some of my recent UX design and research projects
+        </div>
+      </div>
+      <div class="overview-grid">
+            <div class="overview-card">
+                <i class="fas fa-mobile-alt"></i>
+                <h3>Mobile-First Design</h3>
+                <p>Created a responsive interface optimized for mobile devices with intuitive navigation and clear visual hierarchy.</p>
+            </div>
+            <div class="overview-card">
+                <i class="fas fa-tachometer-alt"></i>
+                <h3>Real-time Analytics</h3>
+                <p>Implemented live data usage tracking and network performance metrics to empower users with insights.</p>
+            </div>
+            <div class="overview-card">
+                <i class="fas fa-headset"></i>
+                <h3>Integrated Support</h3>
+                <p>Built-in customer service features including live chat, ticket management, and instant troubleshooting.</p>
+            </div>
+            <div class="overview-card">
+                <i class="fas fa-headset"></i>
+                <h3>Integrated Support</h3>
+                <p>Built-in customer service features including live chat, ticket management, and instant troubleshooting.</p>
+            </div>
+        </div>
+    </section>
+    <section class="section " id="about">
+      <div class="section-title">
+        <h2 class="headline">About Me</h2>
+        <div class="subtitle">
+          Abrief description about me, my experiencen and skills.
+        </div>
+      </div>
+      <div class="about-content">
+          <div class="about-text">
+               <p>Hello! I'm Murukan, a passionate UX designer with over 20 years of experience creating digital products that are both beautiful and functional. My background in user research and design allows me to approach problems from a unique perspective.</p>
+                <p>I believe in designing with empathy, understanding not just what users do, but why they do it. This human-centered approach has helped me create solutions that significantly improve user satisfaction and business metrics.</p>
+                 <p>My career goal is to lead product design at a company that values innovation, user research, and creating meaningful experiences that make a positive impact on people's lives.</p>
+          </div>
+          <div class="skills-container">
+                <div class="skill-category">
+                    <h3>Design Skills</h3>
+                    <ul class="skill-list">
+                        <li>User Interface Design</li>
+                        <li>Interaction Design</li>
+                        <li>Wireframing & Prototyping</li>
+                        <li>Design Systems</li>
+                        <li>Visual Design</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>Research Skills</h3>
+                      <ul class="skill-list">
+                        <li>User Interviews</li>
+                        <li>Usability Testing</li>
+                        <li>Persona Development</li>
+                        <li>Journey Mapping</li>
+                        <li>Analytics & Data Analysis</li>
+                      </ul>
+                </div>
+                <div class="skill-category">
                         <h3>Tools</h3>
                         <ul class="skill-list">
                             <li>Figma</li>
@@ -91,8 +261,8 @@
                             <li>InVision</li>
                             <li>Miro</li>
                         </ul>
-                    </div>
-                    <div class="skill-category">
+                </div>
+                <div class="skill-category">
                         <h3>Soft Skills</h3>
                         <ul class="skill-list">
                             <li>Collaboration</li>
@@ -101,274 +271,40 @@
                             <li>Critical Thinking</li>
                             <li>User Advocacy</li>
                         </ul>
-                    </div>
-                </div>
-            </div>
+              </div>
+          </div>
         </div>
     </section>
-
-    <!-- Projects Section -->
-    <section id="projects">
-        <div class="container">
-            
-                <h2>Featured Projects</h2>
-                <p>Here are some of my recent UX design and research projects</p>
-            
-            <div class="project-grid">
-                <a href="files/pf25-project-1.html">
-                    <div class="project-card">
-                        <div class="project-image">
-                            <img src="images/project-01-Tn.png" width="300px" alt="g thumb">
-                        </div>
-                        <div class="project-content">
-                            <h3 class="PadSides">G20 Shipping- Bulk Carrier Stowage and Voyage Planner- Web Application Design</h3>
-                            <p class="PadSides p-btmMrgS">Complete redesign to improve usability and increase customer engagement.</p>
-                            <div class="project-impact">
-                                <h4>Positive Impact</h4>
-                                <p class="p-btmMrgS">+25% user engagement, +40% task completion rate, 30% reduction in support calls</p>
-                            </div>
-                            <div class="project-tools PadSides">
-                                <span class="tool-tag">Figma</span>
-                                <span class="tool-tag">Locafy</span>
-                                <span class="tool-tag">Figjam</span>
-                                <span class="tool-tag">Adobe CC</span>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-                <a href="files/pf25-msv.html">
-                    <div class="project-card">
-                        <div class="project-image">
-                            <img src="images/project-02-Tn.png" width="300px" alt="g thumb">
-                        </div>
-                        <div class="project-content">
-                            <h3 class="PadSides">Insurance Client Management Application Design</h3>
-                            <p class="PadSides p-btmMrgS">MMSV Life – Agent Portal is designed to help agents gather client information and apply for quotes quickly and efficiently.</p>
-                            <div class="project-impact">
-                                <h4>Positive Impact</h4>
-                                <p class="p-btmMrgS">Significant increase in user engagement, Completion rate and reduced support calls</p>
-                            </div>
-                            <div class="project-tools PadSides">
-                                <span class="tool-tag">Figma</span>
-                                <span class="tool-tag">Locafy</span>
-                                <span class="tool-tag">Figjam</span>
-                                <span class="tool-tag">Adobe CC</span>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-                <a href="files/pf25-smartTug.html">
-                    <div class="project-card">
-                        <div class="project-image">
-                            <img src="images/project-03-Tn.png" width="300px" alt="g thumb">
-                        </div>
-                        <div class="project-content">
-                            <h3 class="PadSides">Tug Planner - Web Application Redesign</h3>
-                            <p class="PadSides p-btmMrgS">Complete redesign to improve usability and increase customer engagement.</p>
-                            <div class="project-impact">
-                                <h4>Positive Impact</h4>
-                                <p class="p-btmMrgS">Increaseed efficieny rate, More task completion rate, Minimized support calls</p>
-                            </div>
-                            <div class="project-tools PadSides">
-                                <span class="tool-tag">Figma</span>
-                                <span class="tool-tag">Locafy</span>
-                                <span class="tool-tag">Figjam</span>
-                                <span class="tool-tag">Adobe CC</span>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-                <a href="files/pf25-LrpV01.html">
-                    <div class="project-card">
-                        <div class="project-image">
-                            <img src="images/project-04-Tn.png" width="300px" alt="g thumb">
-                        </div>
-                        <div class="project-content">
-                            <h3 class="PadSides">Cargo Management Application Application Redesign</h3>
-                            <p class="PadSides p-btmMrgS">Redesigning and version updations - Part 1</p>
-                            <div class="project-impact">
-                                <h4>Positive Impact</h4>
-                                <p class="p-btmMrgS">Higher engagement, More tasks completed, Fewer support calls</p>
-                            </div>
-                            <div class="project-tools PadSides">
-                                <span class="tool-tag">Figma</span>
-                                <span class="tool-tag">Locafy</span>
-                                <span class="tool-tag">Figjam</span>
-                                <span class="tool-tag">Adobe CC</span>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-                <a href="files/pf25-LrpV02.html">
-                    <div class="project-card">
-                        <div class="project-image">
-                            <img src="images/project-05-Tn.png" width="300px" alt="g thumb">
-                        </div>
-                        <div class="project-content">
-                            <h3 class="PadSides">Cargo Management Application Application Redesign</h3>
-                            <p class="PadSides p-btmMrgS">Redesigning and version updations - Part 2</p>
-                            <div class="project-impact">
-                                <h4>Positive Impact</h4>
-                                <p class="p-btmMrgS">Higher engagement, More tasks completed, Fewer support calls</p>
-                            </div>
-                            <div class="project-tools PadSides">
-                                <span class="tool-tag">Figma</span>
-                                <span class="tool-tag">Locafy</span>
-                                <span class="tool-tag">Figjam</span>
-                                <span class="tool-tag">Adobe CC</span>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-                <a href="files/pf25-LrpV03.html">
-                    <div class="project-card">
-                        <div class="project-image">
-                            <img src="images/project-06-Tn.png" width="300px" alt="g thumb">
-                        </div>
-                        <div class="project-content">
-                            <h3 class="PadSides">Cargo Management Application Application Redesign</h3>
-                            <p class="PadSides p-btmMrgS">Redesigning and version updations - Part 3</p>
-                            <div class="project-impact">
-                                <h4>Positive Impact</h4>
-                                <p class="p-btmMrgS">Higher engagement, More tasks completed, Fewer support calls</p>
-                            </div>
-                            <div class="project-tools PadSides">
-                                <span class="tool-tag">Figma</span>
-                                <span class="tool-tag">Locafy</span>
-                                <span class="tool-tag">Figjam</span>
-                                <span class="tool-tag">Adobe CC</span>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-                <a href="files/pf25-uiLibrary.html">
-                    <div class="project-card">
-                        <div class="project-image">
-                            <img src="images/project-07-Tn.png" width="300px" alt="g thumb">
-                        </div>
-                        <div class="project-content">
-                            <h3 class="PadSides">UI Components Library</h3>
-                            <p class="PadSides p-btmMrgS">For  better Collaboration and Stronger Brand Identity</p>
-                            <div class="project-impact">
-                                <h4>Positive Impact</h4>
-                                <p class="p-btmMrgS">Efficient Maintenance, Design Consistency, Faster Process</p>
-                            </div>
-                            <div class="project-tools PadSides">
-                                <span class="tool-tag">Figma</span>
-                                <span class="tool-tag">Locafy</span>
-                                <span class="tool-tag">Figjam</span>
-                                <span class="tool-tag">Adobe CC</span>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-                <a href="files/pf25-Fleet-VesselPosition.html">
-                    <div class="project-card">
-                        <div class="project-image">
-                            <img src="images/project-08-Tn.png" width="300px" alt="g thumb">
-                        </div>
-                        <div class="project-content">
-                            <h3 class="PadSides">Vessel Position Info Application Prototype</h3>
-                            <p class="PadSides p-btmMrgS">Enhancing operational awareness through live and forecasted vessel mapping.</p>
-                            <div class="project-impact">
-                                <h4>Positive Impact</h4>
-                                <p class="p-btmMrgS">Speed up the planning, Increased visual awareness,</p>
-                            </div>
-                            <div class="project-tools PadSides">
-                                <span class="tool-tag">Adobe XD</span>
-                                <span class="tool-tag">Adobe CC</span>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-                <a href="files/pf25-bcap.html">
-                    <div class="project-card">
-                        <div class="project-image">
-                            <img src="images/project-09-Tn.png" width="300px" alt="g thumb">
-                        </div>
-                        <div class="project-content">
-                            <h3 class="PadSides">Bulk Cargo Planning Application</h3>
-                            <p class="PadSides p-btmMrgS">Designed to improve usability and increase customer engagement.</p>
-                            <div class="project-impact">
-                                <h4>Positive Impact</h4>
-                                <p class="p-btmMrgS">+50% user engagement, +60% task completion rate, 30% reduction in support calls</p>
-                            </div>
-                            <div class="project-tools PadSides">
-                                <span class="tool-tag">Adobe XD</span>
-                                <span class="tool-tag">Adobe CC</span>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-                <a href="files/pf25-variousDesigns-01.html">
-                    <div class="project-card">
-                        <div class="project-image">
-                            <img src="images/project-10-Tn.png" width="300px" alt="g thumb">
-                        </div>
-                        <div class="project-content">
-                            <h3 class="PadSides">Various Designs - Part 1</h3>
-                            <p class="PadSides p-btmMrgS">Complete redesign to improve usability and increase customer engagement.</p>
-                            <div class="project-impact">
-                                <h4>Positive Impact</h4>
-                                <p class="p-btmMrgS">+25% user engagement, +40% task completion rate, 30% reduction in support calls</p>
-                            </div>
-                            <div class="project-tools PadSides">
-                                <span class="tool-tag">Figma</span>
-                                <span class="tool-tag">Locafy</span>
-                                <span class="tool-tag">Figjam</span>
-                                <span class="tool-tag">Adobe CC</span>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-            </div>
+    <section class="section " id="contact">
+        <div class="section-title">
+          <h2 class="headline">Get in touch</h2>
+          <div class="subtitle">
+            I'm currently open to full-time opportunities. Feel free to reach out if you want to collaborate on something exciting.
+          </div>
         </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact">
-        <div class="container">
-            <h2>Get In Touch</h2>
-            <div class="contact-container">
-                <div class="contact-info">
-                    <p>I'm currently open to full-time opportunities. Feel free to reach out if you want to collaborate on something exciting.</p>
-                    <div class="info-item">
-                        <i class="fas fa-envelope"></i>
-                        <span>mkbs3315@gmail.com</span>
-                    </div>
-                    <div class="info-item">
-                        <i class="fas fa-phone"></i>
-                        <span>+191 8073795328</span>
-                    </div>
-                    <div class="info-item">
-                        <i class="fas fa-map-marker-alt"></i>
-                        <span>Bangalore, India</span>
-                    </div>
-                    <div class="">
-                        <a href="#"></a>
-                        
-                    </div>
-                </div>
-                
-            </div>
+        <div class="info-item">
+            <i class="fas fa-envelope"></i>
+            <span>mkbs3315@gmail.com</span>
         </div>
+        <div class="info-item">
+            <i class="fas fa-phone"></i>
+            <span>+191 8073795328</span>
+         </div>
+          <div class="info-item">
+            <i class="fas fa-map-marker-alt"></i>
+             <span>Bangalore, India</span>
+          </div>
     </section>
-
     <!-- Footer -->
     <footer>
-        <div class="container">
+        <div class="">
             <p>&copy; Murukan Gopinathan - 2025 UX Designer Portfolio. All rights reserved.</p>
+            <p> This website has been designed and developed by me with the help of Perplexity, Deepseek and Chat GPT</p>
         </div>
     </footer>
-
-     <!--   Sticy top circle-->
-
-<button id="backToTop"><i class="fa-solid fa-arrow-up"></i></button>
-
-
-
-    <!--script-->
-    <script type="text/javascript" src="js/mngpf.js"></script>
-      
+  
+  
+   <!--script-->
+    <script type="text/javascript" src="js/pf.js"></script>
 </body>
 </html>
